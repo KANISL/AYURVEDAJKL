@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VedaBot | Ayurvedic Wellness Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="chat-header">
+            <div class="logo-area">
+                <span class="leaf-icon">🌿</span>
+                <h1>VedaBot</h1>
+            </div>
+            <p class="subtitle">Multilingual Ayurveda Assistant</p>
+            <div class="language-selector">
+                <small>Supports: English, हिन्दी, தமிழ், മലയാളം, & more</small>
+            </div>
+        </header>
+
+        <main class="chat-interface">
+            <div id="chat-history" class="chat-history">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Namaste! 🙏 I am VedaBot. I can help you understand Ayurvedic principles, Doshas, and herbs.
+                        <br><br>
+                        <em>Note: I am an AI, not a doctor. I cannot diagnose diseases.</em>
+                        <br><br>
+                        How are you feeling today? (You can speak in your native language)
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Describe your symptoms or ask about herbs..." autocomplete="off" required>
+                    <button type="submit" id="send-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </form>
+                <div id="loading-indicator" class="hidden">Mixing herbs... 🍵</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
